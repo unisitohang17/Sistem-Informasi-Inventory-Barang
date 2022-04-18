@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Kebon Nusa Indah</title>
+    <link href="vendor/twbs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/all.min.css">
+    <!-- <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/adminlte.min.css"> -->
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 bg-body rounded">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h6 class="float-md-start mb-0">SISTEM INFORMASI INVENTORY<br>WARUNG KEBON NUSA INDAH</h6>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <main class="container-fuild" style="padding-left: 100px;">
+        <div class="b-example-divider"></div>
+
+        <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 300px;">
+
+            <div class="d-flex align-items-center link-dark text-decoration-none">
+                <img src="data:image/png;base64,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"
+                    alt="" width="40" height="40" class="rounded-circle me-2">
+                <strong>DIAN SRI REZEKI<br>ADMIN</strong>
+            </div>
+
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link link-dark" aria-current="page">
+                        <!-- <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg> -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69V5.69ZM12 3L2 12H5V20H11V14H13V20H19V12H22L12 3Z" fill="black"/>
+                            </svg> Beranda
+                    </a>
+                </li>
+                <li>
+                    <a href="stok.html" class="nav-link link-dark">
+                        <!-- <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg> -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 20H22V16H2V20ZM4 17H6V19H4V17ZM2 4V8H22V4H2ZM6 7H4V5H6V7ZM2 14H22V10H2V14ZM4 11H6V13H4V11Z" fill="black"/>
+                            </svg> Stok Bahan Baku
+                    </a>
+                </li>
+                <li>
+                    <a href="laporan.html" class="nav-link link-dark">
+                        <!-- <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg> -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20ZM9 13V19H7V13H9ZM15 15V19H17V15H15ZM11 11V19H13V11H11Z" fill="black"/>
+                            </svg> Laporan Penggunaan Barang
+                    </a>
+                </li>
+                <li>
+                    <a href="grafika.html" class="nav-link link-dark">
+                        <!-- <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg> -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 16.5L3 19.44V11H6V16.5ZM11 14.66L9.43 13.32L8 14.64V7H11V14.66ZM16 13L13 16V3H16V13ZM18.81 12.81L17 11H22V16L20.21 14.21L13 21.36L9.53 18.34L5.75 22H3L9.47 15.66L13 18.64" fill="black"/>
+                            </svg> Grafik Penggunaan Barang
+                    </a>
+                </li>
+                <li>
+                    <a href="kelola.html" class="nav-link link-dark">
+                        <!-- <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg> -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 5C11.0717 5 10.1815 5.36875 9.52513 6.02513C8.86875 6.6815 8.5 7.57174 8.5 8.5C8.5 9.42826 8.86875 10.3185 9.52513 10.9749C10.1815 11.6313 11.0717 12 12 12C12.9283 12 13.8185 11.6313 14.4749 10.9749C15.1313 10.3185 15.5 9.42826 15.5 8.5C15.5 7.57174 15.1313 6.6815 14.4749 6.02513C13.8185 5.36875 12.9283 5 12 5ZM12 7C12.3978 7 12.7794 7.15804 13.0607 7.43934C13.342 7.72064 13.5 8.10218 13.5 8.5C13.5 8.89782 13.342 9.27936 13.0607 9.56066C12.7794 9.84196 12.3978 10 12 10C11.6022 10 11.2206 9.84196 10.9393 9.56066C10.658 9.27936 10.5 8.89782 10.5 8.5C10.5 8.10218 10.658 7.72064 10.9393 7.43934C11.2206 7.15804 11.6022 7 12 7ZM5.5 8C4.83696 8 4.20107 8.26339 3.73223 8.73223C3.26339 9.20107 3 9.83696 3 10.5C3 11.44 3.53 12.25 4.29 12.68C4.65 12.88 5.06 13 5.5 13C5.94 13 6.35 12.88 6.71 12.68C7.08 12.47 7.39 12.17 7.62 11.81C6.89148 10.8606 6.49767 9.69672 6.5 8.5V8.22C6.2 8.08 5.86 8 5.5 8ZM18.5 8C18.14 8 17.8 8.08 17.5 8.22V8.5C17.5 9.7 17.11 10.86 16.38 11.81C16.5 12 16.63 12.15 16.78 12.3C17.2412 12.7471 17.8577 12.998 18.5 13C18.94 13 19.35 12.88 19.71 12.68C20.47 12.25 21 11.44 21 10.5C21 9.83696 20.7366 9.20107 20.2678 8.73223C19.7989 8.26339 19.163 8 18.5 8ZM12 14C9.66 14 5 15.17 5 17.5V19H19V17.5C19 15.17 14.34 14 12 14ZM4.71 14.55C2.78 14.78 0 15.76 0 17.5V19H3V17.07C3 16.06 3.69 15.22 4.71 14.55ZM19.29 14.55C20.31 15.22 21 16.06 21 17.07V19H24V17.5C24 15.76 21.22 14.78 19.29 14.55ZM12 16C13.53 16 15.24 16.5 16.23 17H7.77C8.76 16.5 10.47 16 12 16Z" fill="black"/>
+                            </svg> Kelola Hak Akses
+                    </a>
+                </li>
+                <li>
+                    <a href="pengaturan.html" class="nav-link link-dark">
+                        <!-- <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg> -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.0001 15.5C11.0718 15.5 10.1816 15.1313 9.52521 14.4749C8.86883 13.8185 8.50008 12.9283 8.50008 12C8.50008 11.0717 8.86883 10.1815 9.52521 9.52513C10.1816 8.86875 11.0718 8.5 12.0001 8.5C12.9283 8.5 13.8186 8.86875 14.475 9.52513C15.1313 10.1815 15.5001 11.0717 15.5001 12C15.5001 12.9283 15.1313 13.8185 14.475 14.4749C13.8186 15.1313 12.9283 15.5 12.0001 15.5ZM19.4301 12.97C19.4701 12.65 19.5001 12.33 19.5001 12C19.5001 11.67 19.4701 11.34 19.4301 11L21.5401 9.37C21.7301 9.22 21.7801 8.95 21.6601 8.73L19.6601 5.27C19.5401 5.05 19.2701 4.96 19.0501 5.05L16.5601 6.05C16.0401 5.66 15.5001 5.32 14.8701 5.07L14.5001 2.42C14.4798 2.30222 14.4184 2.19543 14.3269 2.11855C14.2354 2.04168 14.1196 1.99968 14.0001 2H10.0001C9.75008 2 9.54008 2.18 9.50008 2.42L9.13008 5.07C8.50008 5.32 7.96008 5.66 7.44008 6.05L4.95008 5.05C4.73008 4.96 4.46008 5.05 4.34008 5.27L2.34008 8.73C2.21008 8.95 2.27008 9.22 2.46008 9.37L4.57008 11C4.53008 11.34 4.50008 11.67 4.50008 12C4.50008 12.33 4.53008 12.65 4.57008 12.97L2.46008 14.63C2.27008 14.78 2.21008 15.05 2.34008 15.27L4.34008 18.73C4.46008 18.95 4.73008 19.03 4.95008 18.95L7.44008 17.94C7.96008 18.34 8.50008 18.68 9.13008 18.93L9.50008 21.58C9.54008 21.82 9.75008 22 10.0001 22H14.0001C14.2501 22 14.4601 21.82 14.5001 21.58L14.8701 18.93C15.5001 18.67 16.0401 18.34 16.5601 17.94L19.0501 18.95C19.2701 19.03 19.5401 18.95 19.6601 18.73L21.6601 15.27C21.7801 15.05 21.7301 14.78 21.5401 14.63L19.4301 12.97Z" fill="black"/>
+                            </svg> Pengaturan
+                    </a>
+                </li>
+                <li>
+                    <a href="keluar.html" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link active">
+                        <!-- <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg> -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 17V14H9V10H16V7L21 12L16 17ZM14 2C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6H14V4H5V20H14V18H16V20C16 20.5304 15.7893 21.0391 15.4142 21.4142C15.0391 21.7893 14.5304 22 14 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V4C3 3.46957 3.21071 2.96086 3.58579 2.58579C3.96086 2.21071 4.46957 2 5 2H14Z" fill="black"/>
+                            </svg> Keluar
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+        <div class="content-wrapper">
+
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row col-12">
+                        <div class="col-10 col-lg-10 col-md-3 col-sm-2" style="padding-top:10px;">
+                            <h2>Beranda</h2>
+                        </div>
+                        <div class="col-2" style="padding-top:10px;">
+                            <!-- <i class="fa-solid fa-bell"> </i> <button type="button" class="btn btn-outline-secondary rounded-pill">Notifikasi</button> -->
+                            <i class="fa-solid fa-bell"> </i> <button type="button" class="btn btn-outline-secondary rounded-pill" data-toggle="tooltip" data-placement="left" title="Stok menipis, segera stok ulang bahan baku nya!
+                                    dd/mm/yy">Notifikasi</button>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+
+                                <div class="card-body rounded" style="height: 65vh; width:150vh;">
+                                    <h4 class="fw-10">Selamat Datang Kembali, Dian!</h4>
+
+
+                                    <h6 style="padding-top:50px; font-weight: 650;">INFO AKUN DETAIL</h6>
+
+                                    <div class="card card-body" style="width: 60vh;">
+                                        <p>Nama Lengkap<br> Dian Sri Rizky</p>
+                                    </div>
+                                    <div class="card card-body" style="width: 60vh; margin-top: 10px;">
+                                        <p>Nama Pengguna<br> dianrizky</p>
+                                    </div>
+                                    <div class="card card-body" style="width: 60vh; margin-top: 10px;">
+                                        <p>Hak Akses<br> Admin</p>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Peringatan!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Halo Dian, Yakin kamu mau keluar?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                    <a type="button" href="index.html" class="btn btn-primary">Ya, saya yakin</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- SIDEBAR END  -->
+
+    <script src="vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
